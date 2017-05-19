@@ -53,6 +53,7 @@ library(mapr)
 spp <- c('Thylamys elegans','Thylamys karimii','Thylamys pallidior', 'Thylamys venustus')
 dat <- occ(query = spp, from = 'gbif', has_coords = TRUE, limit = 100)
 
+
 map_ggmap(dat) + scale_color_manual(values=cbPalette)
 
 
